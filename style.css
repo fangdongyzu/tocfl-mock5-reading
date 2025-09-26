@@ -53,3 +53,6 @@ button:hover {
   margin-right: 12px;
   font-size: 20px;
 }
+.transcript {
+  white-space: pre-line;
+}
