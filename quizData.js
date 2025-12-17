@@ -386,7 +386,7 @@ const quizData = [
     "part": 4,
     "question": "星期日下午，書店裡的人_____多。",
     "image": "images/36-40.png",
-    "options": ["非常", "正在", "一點", "", "", ""],
+    "options": ["非常", "正在", "一點"],
     "answer": "A",
     "remark": ""
   },
@@ -395,7 +395,7 @@ const quizData = [
     "part": 4,
     "question": "要開學了，很多書都在特價。字典現在_____賣三百五十元。",
     "image": "",
-    "options": ["每", "最", "只", "", "", ""],
+    "options": ["每", "最", "只"],
     "answer": "C",
     "remark": ""
   },
@@ -404,7 +404,7 @@ const quizData = [
     "part": 4,
     "question": "買兩本書比較便宜，_____五百元。",
     "image": "",
-    "options": ["總是", "一共", "只好", "", "", ""],
+    "options": ["總是", "一共", "只好"],
     "answer": "B",
     "remark": ""
   },
@@ -413,7 +413,7 @@ const quizData = [
     "part": 4,
     "question": "因為這裡的書都不貴，_____人很多。",
     "image": "",
-    "options": ["雖然", "所以", "可是", "", "", ""],
+    "options": ["雖然", "所以", "可是"],
     "answer": "B",
     "remark": ""
   },
@@ -422,7 +422,7 @@ const quizData = [
     "part": 4,
     "question": "這學期他要上法文課，他應該_____法文字典。",
     "image": "",
-    "options": ["賣", "付", "買", "", "", ""],
+    "options": ["賣", "付", "買"],
     "answer": "C",
     "remark": ""
   },
