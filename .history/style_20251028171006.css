@@ -640,39 +640,3 @@ header p {
         max-height: 223px;
     }
 }
-
-/* Context Containers (Shared Images and Paragraphs) */
-.context-container {
-    background: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border: 1px solid #e1e8ed;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-/* Shared Images styling */
-.context-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    border: 1px solid #e9ecef;
-}
-
-/* Part 4 Paragraph Styling */
-.reading-passage {
-    font-size: 1.3em; /* Matches .question-text size */
-    line-height: 1.8;
-    color: #2c3e50;
-    text-align: justify; /* Makes paragraph reading easier */
-    font-weight: 500;
-}
-
-/* Responsive adjustments for the passage */
-@media (max-width: 768px) {
-    .reading-passage {
-        font-size: 1.2em;
-        text-align: left;
-    }
-}

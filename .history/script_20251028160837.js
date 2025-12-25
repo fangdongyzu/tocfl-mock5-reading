@@ -95,38 +95,7 @@ function showCurrentPart() {
 function showAllQuestions(questions) {
     let questionsHTML = '';
     
-    // The paragraph text for Part 4
-    const part4Text = "王明五歲的時候在自己家前面，被 ___（41）___ 帶走了。他最近和朋友說他很___（42）___ ，他很希望爸爸知道他大學畢業了。他的朋友聽了以後就上網 ___（43)___ ，最後，王明真的找到他的爸爸了。他爸爸說這些年 ___（44）___ ，沒想到是王明先找到他。他們___（45） ___，也很感謝大家的幫忙。";
-
     questions.forEach(question => {
-        // --- INJECT SHARED CONTENT BEFORE SPECIFIC QUESTIONS ---
-
-        // Part 3: Shared Image for 31-35
-        if (question.id === 31) {
-            questionsHTML += `
-                <div class="context-container">
-                    <img src="images/31-35.png" alt="Reference for questions 31-35">
-                </div>`;
-        }
-        
-        // Part 3: Shared Image for 36-40
-        if (question.id === 36) {
-            questionsHTML += `
-                <div class="context-container">
-                    <img src="images/36-40.png" alt="Reference for questions 36-40">
-                </div>`;
-        }
-
-        // Part 4: Reading Passage for 41-45
-        if (question.id === 41) {
-            questionsHTML += `
-                <div class="context-container">
-                    <div class="reading-passage">${part4Text}</div>
-                </div>`;
-        }
-
-        // --- RENDER QUESTIONS ---
-
         if (question.part === 4) {
             questionsHTML += createPart4Question(question);
         } else {
@@ -167,14 +136,10 @@ function showAllQuestions(questions) {
 }
 
 function createStandardQuestion(question) {
-    // Logic: Only show the image inside the card if it exists AND it is NOT Part 3.
-    // (Because Part 3 images are now shown in the group header above).
-    const showImageInCard = question.image && question.part !== 3;
-
     return `
         <div class="question-item">
             <div class="question-text">${question.id}. ${question.question}</div>
-            ${showImageInCard ? `
+            ${question.image ? `
                 <div class="question-image">
                     <img src="${question.image}" alt="Question ${question.id} Image">
                 </div>
